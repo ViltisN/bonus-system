@@ -5,8 +5,8 @@ public class Main {
         double ticketPrice = 13676;
         int rublesPerMile = 20;
         int miles = (int) (ticketPrice / rublesPerMile);
-        boolean hasFractionalPart = ticketPrice % rublesPerMile != 0;
-        if (hasFractionalPart) {
+        boolean hasDecimalPart = ticketPrice % rublesPerMile != 0;
+        if (hasDecimalPart) {
             miles++;
         }
         System.out.println("Количество начисленных миль: " + miles);
